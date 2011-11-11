@@ -1,0 +1,26 @@
+//
+// Prefix header for all source files of the 'Unit Tests' target in the 'A2CustomBarClass' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+	#warning "This project uses features only available in iPhone SDK 3.0 and later."
+#endif
+
+#define TestObjClass(obj, cls) assertThat([NSNumber numberWithBool: [(obj) isMemberOfClass: [cls class]]], is(equalToBool(YES)))
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+    #import <GHUnitIOS/GHUnit.h>
+    #import <SenTestingKit/SenTestingKit.h>
+    #import "OCMock.h"
+    
+    #define HC_SHORTHAND
+    #import <OCHamcrestIOS/OCHamcrestIOS.h>
+
+	#import "A2CustomBarClass.h"
+	#import "CBObjects.h"
+#endif
