@@ -1,12 +1,12 @@
-#A2CustomBarClass
+# A2CustomBarClass
 
 `A2CustomBarClass` contains categories that allow for custom bar classes in `UINavigationController` and `UITabBarController`.
 
-##Usage
+## Usage
 
 Use the methods provided by `A2CustomBarClass` where you would otherwise initialize a `UINavigationController` or `UITabBarController` instance.
 
-##License
+## License
 
 `A2CustomBarClass` is licensed by [Alexsander Akers](http://alexsander.ca) and [Pandamonia LLC](http://pandamonia.us) under the Simplified BSD License, which is reproduced in its entirety here:
 
